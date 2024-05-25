@@ -13,7 +13,7 @@ Welcome to the VEC Digilib GitHub repository! VEC Digilib is a unified platform 
 - **Unified Learning Platform:** Access a diverse range of free learning resources from various sources in one place.
 - **News Updates:** Stay informed with the latest news.
 
-- **Mistral AI LLM Integration:** Seamlessly interact with the Llama2 LLM chatbot for instant answers to your questions.
+- **Mistral AI LLM Integration:** Seamlessly interact with the  chatbot for instant answers to your questions.
 
 ## License
 
