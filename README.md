@@ -1,6 +1,6 @@
 # VEC Digilib
 
-Welcome to the VEC Digilib GitHub repository! VEC Digilib is a unified platform that brings together a curated collection of free learning resources into a single app. Not only does it serve as a comprehensive learning hub, but it also keeps users updated with the latest news in the education sector. This project integrates seamlessly with Llama2 LLM chatbot to provide users with answers to their questions.
+Welcome to the VEC Digilib GitHub repository! VEC Digilib is a unified platform that brings together a curated collection of free learning resources into a single app. Not only does it serve as a comprehensive learning hub, but it also keeps users updated with the latest news in the education sector. This project integrates seamlessly with Mistral AI chatbot to provide users with answers to their questions.
 
 ## Download and Install
 
