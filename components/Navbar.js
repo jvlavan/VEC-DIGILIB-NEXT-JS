@@ -48,8 +48,6 @@ import {
 
 const LinkItems = [
   { name: "NDL", icon: FiTrendingUp, url: "https://ndl.iitkgp.ac.in/" },
-
-  { name: "DELNET", icon: FiCompass, url: "http://164.100.247.26/" },
   { name: "SCIENCE NEWS", icon: BiNews, url: "sciencenews" },
   { name: "TECH NEWS", icon: BiNews, url: "technews" },
   {
