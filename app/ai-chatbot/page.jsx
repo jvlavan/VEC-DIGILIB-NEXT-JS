@@ -116,7 +116,11 @@ export default function BlogPage() {
           <>
             {" "}
             <div className="flex items-start">
-              <img className="mr-2 h-8 w-8 rounded-full" src="/ai.jpg" />
+              <img
+                className="mr-2 h-8 w-8 rounded-full"
+                alt="VEC Digichat"
+                src="/ai.jpg"
+              />
               <div className="flex rounded-b-xl rounded-tr-xl bg-slate-50 p-4  sm:max-w-md md:max-w-2xl">
                 <p>
                   I am thinking hang on ,I will be answering you shortly....
