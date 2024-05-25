@@ -27,10 +27,10 @@ export default function BlogPage() {
     setchat(event.target.value);
 
     setoldchat(event.target.value);
-   // console.log("Text typed:", event.target.value);
+    // console.log("Text typed:", event.target.value);
   };
   let chatpayloadhandler = async () => {
-   // console.log(chat);
+    // console.log(chat);
     setloading(true);
     chatdataarray = [...chatdataarray, { role: "user", content: chat }];
     //console.log(chatdataarray);
@@ -49,28 +49,32 @@ export default function BlogPage() {
           }
         )
         .then(async (response) => {
-       //   console.log(response.data);
+          //   console.log(response.data);
           chatdataarray = [
             { role: "user", content: oldchat },
             { role: "system", content: response.data.res.result.response },
           ];
-      //    console.log(chatdataarray);
+          //    console.log(chatdataarray);
           setchatpayload([...chatdataarray]);
-      //    console.log(chatpayload);
-         // console.log(response.data.res.result.response);
+          //    console.log(chatpayload);
+          // console.log(response.data.res.result.response);
           setloading(false);
           toast.success("One new message from VEC DigiChat!");
         });
     }
   };
 
- // console.log(chatpayload);
+  // console.log(chatpayload);
   return (
     <div className="flex h-[97vh] w-full flex-col">
       <Toaster position="top-right" reverseOrder={false} />
       <div className="flex-1 space-y-6 overflow-y-auto rounded-xl bg-slate-200 p-4 text-sm leading-6 text-slate-900 shadow-sm  sm:text-base sm:leading-7">
         <div className="flex items-start">
-          <img className="mr-2 h-8 w-8 rounded-full" src="/ai.jpg" />
+          <img
+            className="mr-2 h-8 w-8 rounded-full"
+            alt="VEC Digichat"
+            src="/ai.jpg"
+          />
           <div className="flex rounded-b-xl rounded-tr-xl bg-slate-50 p-4  sm:max-w-md md:max-w-2xl">
             <p>
               Howdy user my name is VEC DIGICHAT you can ask me anything but I
@@ -87,7 +91,7 @@ export default function BlogPage() {
                   <img
                     className="mr-2 h-8 w-8 rounded-full"
                     src="/ai.jpg"
-                    alt="System"
+                    alt="VEC Digichat"
                   />
                   <div className="flex rounded-b-xl rounded-tr-xl bg-slate-50 p-4 sm:max-w-md md:max-w-2xl">
                     <p>{item.content}</p>
@@ -99,7 +103,7 @@ export default function BlogPage() {
                   <img
                     className="ml-2 h-8 w-8 rounded-full"
                     src="/student.jpg"
-                    alt="User"
+                    alt="user DP"
                   />
                   <div className="flex min-h-[85px] rounded-b-xl rounded-tl-xl bg-slate-50 p-4 sm:min-h-0 sm:max-w-md md:max-w-2xl">
                     <p>{item.content}</p>

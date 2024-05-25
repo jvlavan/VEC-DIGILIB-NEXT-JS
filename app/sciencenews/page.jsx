@@ -1,14 +1,6 @@
 "use client";
 import React, { useState, useEffect } from "react";
 import axios from "axios";
-import {
-  Card,
-  CardHeader,
-  CardBody,
-  CardFooter,
-  Image,
-  Button,
-} from "@nextui-org/react";
 import { Spinner } from "@nextui-org/react";
 import toast, { Toaster } from "react-hot-toast";
 const App = () => {
@@ -54,23 +46,21 @@ const App = () => {
               key={index}
               className="max-w-sm h-98 m-5 bg-white border border-gray-200 rounded-lg shadow "
             >
-              <a>
-                <img
-                  className="object-cover rounded-t-lg "
-                  src={news.urlToImage || "/news.jpg"}
-                  alt={news.title}
-                />
-              </a>
+              <img
+                className="object-cover rounded-t-lg "
+                src={news.urlToImage || "/news.jpg"}
+                alt={news.title}
+              />
+
               <div className="p-5">
-                <a>
-                  <h5 className="mb-2 text-md font-bold tracking-tight text-gray-900 ">
-                    {news.title}
-                  </h5>
-                </a>
+                <h5 className="mb-2 text-md font-bold tracking-tight text-gray-900 ">
+                  {news.title}
+                </h5>
 
                 <a
-                  href={news.url}
+                  href={news.url || "/"}
                   target="_blank"
+                  rel="noreferrer"
                   className="inline-flex items-center px-3 py-2 mt-5 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 "
                 >
                   Read more
@@ -83,9 +73,9 @@ const App = () => {
                   >
                     <path
                       stroke="currentColor"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth="2"
                       d="M1 5h12m0 0L9 1m4 4L9 9"
                     />
                   </svg>

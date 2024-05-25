@@ -83,7 +83,6 @@ export default function SimpleSidebar({ children }) {
         display={{ base: "none", md: "block" }}
       />
       <Drawer
-        autoFocus={false}
         isOpen={isOpen}
         placement="left"
         onClose={onClose}
