@@ -8,7 +8,7 @@ export async function DELETE() {
     await clerkClient.users.deleteUser(userId);
     return NextResponse.json({ message: "User deleted" });
   } catch (error) {
-    console.log(error);
+    // console.log(error);
     return NextResponse.json({ error: "Error deleting user" });
   }
 }
