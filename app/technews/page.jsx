@@ -9,7 +9,7 @@ const App = () => {
   useEffect(() => {
     axios
       .get(
-        "https://api.mediastack.com/v1/news?access_key=" +
+        "http://api.mediastack.com/v1/news?access_key=" +
           process.env.NEXT_PUBLIC_NEWS_API +
           "&categories=technology&limit=10"
       )
