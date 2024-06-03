@@ -8,17 +8,18 @@ const App = () => {
 
   useEffect(() => {
     axios
-      .get(
-        "http://api.mediastack.com/v1/news?access_key=" +
-          process.env.NEXT_PUBLIC_NEWS_API +
-          "&categories=science&limit=10"
-      )
+      .get("/api/science-news", {
+        headers: {
+          "news-api-nextjs-key": process.env.NEXT_PUBLIC_NEWS_API_NEXT_JS_KEY,
+        },
+      })
       .then((response) => {
+        // console.log(response.data);
         // var news = response.data.articles.filter(
         //   (news) => news.urlToImage != null
         // );
         // news = news.filter((news) => news.url != "https://removed.com/");
-        setnews(response.data.data);
+        setnews(response.data.news);
       })
       .catch((error) => {
         //console.error("Error fetching the news:", error);
