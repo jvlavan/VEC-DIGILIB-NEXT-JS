@@ -11,7 +11,6 @@ function Page() {
           <p className="mb-4 text-lg font-light text-gray-200">
             We feel sorry for leaving you .{" "}
           </p>
-          
         </div>
       </div>
     </section>
